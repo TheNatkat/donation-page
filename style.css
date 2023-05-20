@@ -1,0 +1,293 @@
+@font-face {
+  font-family: "Flood std";
+  src: url("/donation-page/assets/Flood\ Std\ Regular.otf") format("opentype");
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  overflow-y: 0;
+}
+
+body {
+  width: 100%;
+  background-image: url("/donation-page/assets/background.png");
+  background-repeat: repeat-x;
+  background-size: cover;
+  background-position: center;
+}
+
+header {
+  display: flex;
+  height: 5rem;
+  background-color: #ffffff;
+  align-items: center;
+  justify-content: center;
+}
+
+h2 {
+  text-align: center;
+  font: normal normal bold 28px/36px Helvetica;
+  color: #354463;
+}
+
+main {
+  padding-top: 5%;
+  display: flex;
+  flex-direction: row-reverse;
+  justify-content: space-around;
+}
+
+.form-box {
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+  background-color: #354463;
+  width: 50%;
+  height: 1000px;
+  padding: 60px;
+}
+
+h3 {
+  font-size: 4.5rem;
+  font-family: "Flood std", sans-serif;
+  color: #ffffff;
+  font-weight: 400;
+  width: 30%;
+}
+.section {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  justify-content: space-between;
+  row-gap: 20px;
+}
+
+.form {
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+}
+
+.half-section {
+  display: flex;
+  flex-direction: column;
+  row-gap: 30px;
+  width: 45%;
+}
+.full-section {
+  display: flex;
+  flex-direction: column;
+  row-gap: 30px;
+  width: 100%;
+}
+input {
+  background-color: #354463;
+  border: none;
+  outline: none;
+  border-bottom: 1px solid #c1f7d5;
+  width: 100%;
+}
+
+#half {
+  display: flex;
+  flex-direction: row;
+  column-gap: 40px;
+}
+#half > div {
+  display: flex;
+  flex-direction: column;
+  row-gap: 30px;
+  justify-content: space-around;
+  column-gap: 10px;
+}
+h4 {
+  font-family: Inter, sans-serif;
+  color: #ffffff;
+  font-size: 2rem;
+  display: inline-block;
+  width: 100%;
+}
+
+h6 {
+  font-family: Inter, sans-serif;
+  font-size: 1rem;
+  font-weight: 100;
+  text-align: left;
+  color: #ffffff;
+  width: 100%;
+}
+
+#last-section {
+  row-gap: 60px;
+}
+
+#last-section h4 {
+  font-size: 2.3rem;
+}
+
+#last-section #half {
+  justify-content: space-between;
+}
+
+button {
+  color: #354463;
+  background-color: #c1f7d5;
+  border: none;
+  border-radius: 30px;
+  padding: 20px 60px;
+  font-size: 1rem;
+}
+
+a {
+  padding: 20px;
+  color: #c1f7d5;
+  order: -1;
+}
+
+footer {
+  background-color: #ffffff;
+  width: 100%;
+  height: 400px;
+  display: flex;
+  padding: 100px 80px;
+  align-items: flex-start;
+  column-gap: 150px;
+}
+
+.footer-section {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 10%;
+  row-gap: 20px;
+}
+
+.footer-section h2 {
+  text-align: center;
+  font: normal normal bold 28px/36px Helvetica;
+  color: #354463;
+}
+
+h5 {
+  order: 1;
+  text-align: left;
+  font: normal normal normal 11px/13px Helvetica;
+  letter-spacing: 0.44px;
+  color: #354463;
+  border-bottom: 1px solid #354463;
+}
+
+#address {
+  border-bottom: 0px;
+  font-size: 0.8rem;
+}
+#footer-link {
+  flex-direction: column-reverse;
+}
+#footer-follow {
+  flex-direction: column-reverse;
+}
+footer a {
+  padding: 0;
+  color: #354463;
+}
+
+#footer-flood {
+  font-size: 3rem;
+  font-family: "Flood std", sans-serif;
+  color: #354463;
+  font-weight: 400;
+}
+
+@media (max-width: 900px) {
+  main {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    row-gap: 10px;
+  }
+  .form-box {
+    width: 80%;
+    height: 1200px;
+    row-gap: 80px;
+  }
+  h3 {
+    font-size: 3rem;
+    text-align: center;
+    width: 60%;
+  }
+  footer {
+    padding: 100px 20px;
+    width: 100%;
+    padding-left: 100px;
+    padding-right: 100px;
+    height: 600px;
+    flex-wrap: wrap;
+    row-gap: 30px;
+  }
+
+  #footer-follow {
+    padding-left: 210px;
+  }
+}
+
+@media (max-width: 600px) {
+  footer {
+    background-color: #ffffff;
+    width: 100%;
+    height: 400px;
+    display: flex;
+    padding: 30px 40px;
+    align-items: flex-start;
+    column-gap: 50px;
+  }
+
+  h3 {
+    font-size: 2rem;
+    line-height: 2rem;
+    text-align: center;
+    width: 80%;
+  }
+  .form-box {
+    height: 1300px;
+  }
+
+  h4 {
+    font-size: 1.2rem;
+    width: 100%;
+  }
+  h6 {
+    font-size: 0.8rem;
+    width: 100%;
+  }
+  #last-section h4 {
+    font-size: 1.3em;
+  }
+
+  #half {
+    flex-direction: column;
+  }
+
+  button {
+    order: -2;
+  }
+  .footer-section {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 30%;
+    padding: 0px 0px;
+  }
+
+  .footer-section h2 {
+    font-size: 1rem;
+    text-align: left;
+    font: normal normal bold 28px/36px Helvetica;
+    color: #354463;
+  }
+  #footer-follow {
+    padding-left: 0px;
+  }
+}
